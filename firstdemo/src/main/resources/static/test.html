@@ -12,7 +12,7 @@
             $.ajax({
                 type: "POST",
                 dataType: "json",
-                url: '/user/save1',
+                url: '/user/save',
                 contentType: "application/json",
                 data: JSON.stringify({
                     "name":name,
@@ -20,11 +20,10 @@
                     "password": password
                 }),
                 success: function (result) {
-
-                    if (result.name!=null&result.userName!=null&result.password!=null) {
+                    if ("" !=result.name&&"" != result.userName&&"" != result.password) {
                         alert("注册成功");
                     }else {
-                        alert("error")
+                        alert("请填写完整！")
                     }
                 }
             });
