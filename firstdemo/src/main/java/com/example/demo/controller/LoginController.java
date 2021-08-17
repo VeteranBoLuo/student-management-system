@@ -21,6 +21,7 @@ public class LoginController {
     public ModelAndView Login(String userName , String password){
        if(iLoginService.login(userName,password)!=null){
         return new ModelAndView("register");
+        //1234
        }else {
            return null;
        }
