@@ -9,13 +9,16 @@
 </head>
 
 <body>
-
+<#include 'top.ftl'>
+<div style="width: 800px;margin: 0 auto">
 <form action="/doLogin" method="post">
    <p> <input type="text" name="userName" placeholder="用户名" /></p>
     <p>  <input type="password" name="password" placeholder="密码" /></p>
-    <button type="submit" class="btn" >登录</button>
-    <button type="reset"  class="btn">重置</button>
-
+    <div style="margin-top: 10px">
+        <input type="submit" value="登录" class="btn " style="margin-left: 120px"/>
+        <input type="button" value="注册" class="btn" onclick="window.location.href='register';"style="margin-left: 50px"/>
+    </div>
+    <div style="color: #ff0114">${error!''}</div>
 </form>
 
 

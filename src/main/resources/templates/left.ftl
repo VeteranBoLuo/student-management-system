@@ -1,33 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>主界面</title>
-    <script src="https://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
-    <link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
-    <script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
-	
-	<style type="text/css">
-	
-		#left-total-page{
-			width: 100px;
-			height: 400px;
-			background-color: azure;
-			text-align: center;
-		}
-	</style>
-</head>
-<body >
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    li{list-style-type:none;margin-left: -40px;margin-top: 10px}
+</style>
+<div style="width: 200px;margin: 0 auto;float: left">
 
-<div id="left-total-page">
 
-<ul class="nav nav-pills nav-stacked" style="margin-top: 10px;">
-    <li ><a href="message">个人信息 </a></li>
-    <li ><a href="">修改信息</a></li>
-    <li><a href="register">注册</a></li>
-</ul>
+    <b>个人中心</b>&nbsp;&nbsp;&nbsp;
+
+    <ul >
+        <li ><a href="notifications">最新通知</a></li>
+        <li ><a href="message">学生信息</a></li>
+    </ul>
+
+
+
+
+    <b>人员管理</b>
+    <ul>
+        <li><a href="sregister">学生注册</a></li>
+        <li><a href="delete">删除学生</a></li>
+        <li><a href="retrieve">搜索学生</a></li>
+    </ul>
+
+
+
+
+
 </div>
-	
-</body>
-
-</html>
