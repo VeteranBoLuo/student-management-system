@@ -1,6 +1,7 @@
 # first_demo
 
 #### 介绍
+demo版，开发中
 适合初学者的学生管理系统，主要使用了spring+springboot+freemaker技术，数据库使用mysql，项目下载下来只需要改一下数据库的配置就可以直接使用
 
 #### 软件架构
