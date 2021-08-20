@@ -22,7 +22,7 @@
 <div id="left-total-page">
 
 <ul class="nav nav-pills nav-stacked" style="margin-top: 10px;">
-    <li ><a href="message">个人信息</a></li>
+    <li ><a href="message">个人信息 </a></li>
     <li ><a href="">修改信息</a></li>
     <li><a href="register">注册</a></li>
 </ul>
