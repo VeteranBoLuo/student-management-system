@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html >
 <head>
     <meta charset="UTF-8">
     <title>注册</title>

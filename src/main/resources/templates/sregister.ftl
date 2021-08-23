@@ -21,7 +21,12 @@
                     "phone": phone
                 }),
                 success: function (result) {
-
+                    if(null!=result){
+                    alert("注册成功");
+                    window.location.href="sregister";
+                    }else {
+                        alert("请填写完整！")
+                    }
                 }
             });
 
@@ -46,7 +51,7 @@
                 <tr>
                     <td>姓名：</td>
                     <td>
-                        <input name="name" type="text"  id="studentname" maxlength="20"/>
+                        <input name="name" type="text"  id="name" maxlength="20"/>
                     </td>
                 </tr>
                 <tr>

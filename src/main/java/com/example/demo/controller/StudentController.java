@@ -18,9 +18,11 @@ public class StudentController {
 
     @ResponseBody
     @PostMapping("/Sregister")
-    public String Register(@RequestBody Student student){
+    public Student Register(@RequestBody Student student){
         studentDao.save(student);
-        return "notifications";
+        return student;
     }
+
+    public Student Retrieve(String )
 }
 
