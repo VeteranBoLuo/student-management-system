@@ -32,8 +32,6 @@
     </script>
 </head>
 <body>
-
-
 <form>
     <p>姓名：<input name="name" type="text" id="name"  size="15"/></p>
     <p>用户名：<input name="userName" type="text" id="userName"  size="15"/></p>

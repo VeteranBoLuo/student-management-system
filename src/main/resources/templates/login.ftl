@@ -8,14 +8,16 @@
     <script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="width: 810px; border-style:solid;
+   border-color:black;border-width:1px;margin: 0 auto">
 <#include 'top.ftl'>
-<div style="width: 800px;margin: 0 auto">
-<form action="/doLogin" method="post">
+<div style="width:200px;margin: 0 auto">
+
+<form action="/doLogin" method="post" >
    <p> <input type="text" name="userName" placeholder="用户名" /></p>
     <p>  <input type="password" name="password" placeholder="密码" /></p>
     <div style="margin-top: 10px">
-        <input type="submit" value="登录" class="btn " style="margin-left: 120px"/>
+        <input type="submit" value="登录" class="btn " />
         <input type="button" value="注册" class="btn" onclick="window.location.href='register';"style="margin-left: 50px"/>
     </div>
     <div style="color: #ff0114">${error!''}</div>
