@@ -2,7 +2,7 @@
 
 #### 介绍
 demo版，开发中
-适合初学者的学生管理系统，主要使用了spring+springboot+freemaker技术，数据库使用mysql，项目下载下来只需要改一下数据库的配置就可以直接使用
+适合初学者的学生管理系统，主要使用spring+springboot+maven+mysql，项目下载下来只需要改一下数据库的账号密码就可以直接使用,非常适合用来应付期末答辩~~
 
 #### 软件架构
 软件架构说明
@@ -16,7 +16,7 @@ demo版，开发中
 
 #### 使用说明
 
-1.  xxxx
+1.  将项目拉下来，idea直接打开，运行DemoApplication，浏览器输入http://localhost:8080/即可访问
 2.  xxxx
 3.  xxxx
 
