@@ -21,6 +21,7 @@
     <ul>
         <li><a href="sregister">学生注册</a></li>
         <li><a href="delete">删除学生</a></li>
+<#--        <li><a href="update">修改学生</a></li>-->
         <li><a href="retrieve">搜索学生</a></li>
     </ul>
 

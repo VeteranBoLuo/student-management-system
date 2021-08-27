@@ -2,12 +2,13 @@ package com.example.demo.controller;
 
 import com.example.demo.dao.StudentDao;
 import com.example.demo.entity.Student;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-
+@Api(tags = "学生信息")
 @Controller
 public class StudentController {
     @Autowired
@@ -28,10 +29,27 @@ public class StudentController {
       return null;
     }
 
+
+//    @RequestMapping("/update")
+//    public String update(){
+//        return "update";
+//    }
+//
+//    @Transactional
+//    @PostMapping("/Update")
+//    public void Update(String card){
+//
+//    }
+
+
+
+
+
     @RequestMapping("/delete")
     public String delete(){
         return "delete";
     }
+
     @Transactional
     @PostMapping("/Delete")
     public void Delete(String card){

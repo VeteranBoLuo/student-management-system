@@ -2,13 +2,14 @@ package com.example.demo.controller;
 
 import com.example.demo.dao.StudentDao;
 import com.example.demo.entity.Student;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
-
+@Api(tags = "主界面")
 @Controller
 public class Message {
     @Autowired
