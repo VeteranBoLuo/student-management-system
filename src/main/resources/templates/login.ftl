@@ -20,7 +20,7 @@
         }
         .a{
             position:relative;
-            top: 100px;
+            top: 50px;
             width: 1100px;
             height: 550px;
             box-shadow: 0 5px 15px rgba(0,0,0,.8);
@@ -51,15 +51,13 @@
         .line{
             width: 230px;
             margin: 20px 0;
+            outline: none;
             border: 0;
             padding: 10px;
             border-bottom: 3px solid rgb(80,80,170);
             font: 900 16px '';
         }
-        .f{
-            float: right;
-            margin: 10px 0;
-        }
+       
         .g{
             position: absolute;
             margin: 20px;

@@ -46,7 +46,7 @@
 
         .a{
             position:relative;
-            top: 100px;
+            top: 50px;
             width: 1100px;
             height: 550px;
             box-shadow: 0 5px 15px rgba(0,0,0,.8);
