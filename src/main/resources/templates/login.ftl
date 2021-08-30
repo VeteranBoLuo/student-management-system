@@ -57,7 +57,7 @@
             border-bottom: 3px solid rgb(80,80,170);
             font: 900 16px '';
         }
-       
+
         .g{
             position: absolute;
             margin: 20px;
@@ -80,7 +80,7 @@
     <div class="left"></div>
     <div class="right">
         <div class="login">
-            <h1><a href="/">登录</a>/<a href="register">注册</a></h1>
+            <h1><a href="/">登录123</a>/<a href="register">注册</a></h1>
             <form action="/doLogin" method="post" >
                 <input name="userName" type="text" class="line" placeholder="账号">
                 <input name="password" type="password" class="line" placeholder="密码">
