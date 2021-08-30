@@ -71,8 +71,8 @@
 
                 <tr>
                     <td style="margin-top: 20px;float: left">
-                        <input value="注册" type="button" onclick="addStudent()"/>
-                        <input type="reset"  value="重置"/>
+                        <input value="注册" type="button" onclick="addStudent()" class="btn btn-primary"/>
+                        <input type="reset"  value="重置" class="btn btn-primary"/>
                     </td>
                 </tr>
             </table>

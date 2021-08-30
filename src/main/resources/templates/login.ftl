@@ -11,7 +11,8 @@
             text-decoration:none;
 
         }
-        a:link{color:red}
+        a:link{color:black}
+        a:visited{color: black}
         a:hover {color:gray}
         body{
 

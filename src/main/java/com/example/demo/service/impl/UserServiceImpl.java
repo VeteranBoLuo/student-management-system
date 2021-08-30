@@ -14,10 +14,10 @@ public class UserServiceImpl implements IUserService {
     private UserDao userDao;
 
 
-    @Override
-    public User update(@NonNull User user) {
-        return null;
-    }
+//    @Override
+//    public User update(@NonNull User user) {
+//        return null;
+//    }
 
     @Override
     public User save(@NonNull User user) {
@@ -28,17 +28,17 @@ public class UserServiceImpl implements IUserService {
         return null;
     }
 
-    @Override
-    public User findById(@NonNull Long id) {
-        return null;
-    }
-
-    @Override
-    public User delById(@NonNull Long id) {
-        User user = userDao.getById(id);
-        if(user!=null) {
-            userDao.delete(user);
-        }
-        return null;
-    }
+//    @Override
+//    public User findById(@NonNull Long id) {
+//        return null;
+//    }
+//
+//    @Override
+//    public User delById(@NonNull Long id) {
+//        User user = userDao.getById(id);
+//        if(user!=null) {
+//            userDao.delete(user);
+//        }
+//        return null;
+//    }
 }

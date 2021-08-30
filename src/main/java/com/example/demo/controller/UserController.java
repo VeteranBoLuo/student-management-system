@@ -16,7 +16,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("user")
-@Api(tags = "用户信息")
+@Api(tags = "管理员信息")
 public class UserController {
 
     @Autowired
@@ -30,17 +30,17 @@ public class UserController {
             return userService.save(user);
     }
 
-    @ApiOperation("根据id删除")
-    @PostMapping("delById")
-    public User delById(@NonNull Long id) {
-        return userService.delById(id);
-    }
+//    @ApiOperation("根据id删除")
+//    @PostMapping("delById")
+//    public User delById(@NonNull Long id) {
+//        return userService.delById(id);
+//    }
 
 
-    @ApiOperation("查询所有")
-    @PostMapping("findAll")
-    public List<User> findAll(){
-        List<User> users = userDao.findAll();
-        return users;
-    }
+//    @ApiOperation("查询所有")
+//    @PostMapping("findAll")
+//    public List<User> findAll(){
+//        List<User> users = userDao.findAll();
+//        return users;
+//    }
 }

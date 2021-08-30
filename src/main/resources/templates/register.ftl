@@ -38,7 +38,9 @@
 
         }
         a:link{color:black}
+        a:visited{color: black}
         a:hover {color:gray}
+
         body{
             display: flex;
             justify-content: center;

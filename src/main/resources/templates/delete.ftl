@@ -25,8 +25,8 @@
 
                 <tr>
                     <td style="margin-top: 20px;float: left">
-                        <input type="submit"  value="删除" class="btn"/>
-                        <input type="reset"  value="重置" class="btn"/>
+                        <input type="submit"  value="删除" class="btn btn-primary"/>
+                        <input type="reset"  value="重置" class="btn btn-primary"/>
                     </td>
                 </tr>
             </table>
