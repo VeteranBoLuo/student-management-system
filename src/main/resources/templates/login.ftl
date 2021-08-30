@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<#--界面借鉴地址https://goatchen.coding.net/public/html-css/HTML-CSS/git/files/master/-->
     <title>登录</title>
     <style>
         a{
@@ -85,7 +86,6 @@
             <form action="/doLogin" method="post" >
                 <input name="userName" type="text" class="line" placeholder="账号">
                 <input name="password" type="password" class="line" placeholder="密码">
-                <a type="button" class="f ">忘记密码</a>
                 <button type="submit"  class="g" style="cursor: pointer">登录</button>
                 <div style="color: #ff0114">${error!''}</div>
             </form>
