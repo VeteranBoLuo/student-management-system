@@ -7,8 +7,8 @@ demo版 一直在更新
 有什么好的建议可以发邮件：1902013368@qq.com
 
 #### 技术说明
-.开发工具 ：IDEA2021.1.3
-.技术框架：Spring+Springboot+freemaker(和html几乎一样)
+-开发工具 ：IDEA2021.1.3
+- 技术框架：Spring+Springboot+freemaker(和html几乎一样)
 .数据库：MySQL 5.6
 .项目管理工具：Maven
 
