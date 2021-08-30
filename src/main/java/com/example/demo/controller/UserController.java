@@ -30,17 +30,4 @@ public class UserController {
             return userService.save(user);
     }
 
-//    @ApiOperation("根据id删除")
-//    @PostMapping("delById")
-//    public User delById(@NonNull Long id) {
-//        return userService.delById(id);
-//    }
-
-
-//    @ApiOperation("查询所有")
-//    @PostMapping("findAll")
-//    public List<User> findAll(){
-//        List<User> users = userDao.findAll();
-//        return users;
-//    }
 }

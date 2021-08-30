@@ -12,6 +12,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
+/**
+ * 访问localhost:8080/doc.html即可查看项目的swagger文档
+ * */
 public class Swagger2Config {
 
     @Bean
