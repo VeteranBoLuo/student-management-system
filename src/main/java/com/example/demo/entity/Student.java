@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.*;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Table(name = "student")
 public class Student {
+
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
