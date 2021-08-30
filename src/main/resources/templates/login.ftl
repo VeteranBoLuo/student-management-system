@@ -2,30 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
-    <script src="https://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
-    <link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
-    <script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <style>
+        a{
+            text-decoration:none;
+
+        }
+        a:link{color:red}
+        a:hover {color:gray}
+        body{
+
+            display: flex;
+            justify-content: center;
+        }
+        .a{
+            position:relative;
+            top: 100px;
+            width: 1100px;
+            height: 550px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.8);
+            display: flex;
+        }
+        .left{
+            width: 800px;
+            height: 550px;
+            background-image: url("picture/201515-158211451517f1.jpg");
+            /* 让图片适应大小 */
+            background-size: cover;
+        }
+        .right{
+            width: 300px;
+            height: 550px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login{
+            width: 250px;
+            height: 500px;
+        }
+        .login h1{
+            font: 900 30px '';
+        }
+        .line{
+            width: 230px;
+            margin: 20px 0;
+            border: 0;
+            padding: 10px;
+            border-bottom: 3px solid rgb(80,80,170);
+            font: 900 16px '';
+        }
+        .f{
+            float: right;
+            margin: 10px 0;
+        }
+        .g{
+            position: absolute;
+            margin: 20px;
+            bottom: 40px;
+            display: block;
+            width: 200px;
+            height: 60px;
+            font: 900 30px '';
+            text-decoration: none;
+            line-height: 50px;
+            border-radius: 30px;
+            background-image: linear-gradient(to left,
+            #9c88ff,#3cadeb);
+            text-align: center;
+        }
+    </style>
 </head>
-
-<body style="width: 810px; border-style:solid;
-   border-color:black;border-width:1px;margin: 0 auto">
-<#include 'top.ftl'>
-<div style="width:200px;margin: 0 auto">
-
-<form action="/doLogin" method="post" >
-   <p> <input type="text" name="userName" placeholder="用户名" /></p>
-    <p>  <input type="password" name="password" placeholder="密码" /></p>
-    <div style="margin-top: 10px">
-        <input type="submit" value="登录" class="btn " />
-        <input type="button" value="注册" class="btn" onclick="window.location.href='register';"style="margin-left: 50px"/>
+<body>
+<div class="a">
+    <div class="left"></div>
+    <div class="right">
+        <div class="login">
+            <h1><a href="/">Login</a>/<a href="register">Register</a></h1>
+            <form action="/doLogin" method="post" >
+                <input name="userName" type="text" class="line" placeholder="账号">
+                <input name="password" type="password" class="line" placeholder="密码">
+                <a type="button" class="f ">忘记密码</a>
+                <button type="submit"  class="g" style="cursor: pointer">登录</button>
+                <div style="color: #ff0114">${error!''}</div>
+            </form>
+        </div>
     </div>
-    <div style="color: #ff0114">${error!''}</div>
-</form>
-
-
 </div>
-
-
 </body>
 </html>

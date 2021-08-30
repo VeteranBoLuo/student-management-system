@@ -42,9 +42,6 @@ public class StudentController {
 //    }
 
 
-
-
-
     @RequestMapping("/delete")
     public String delete(){
         return "delete";
