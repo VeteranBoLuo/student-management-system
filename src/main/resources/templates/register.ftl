@@ -104,7 +104,7 @@
     <div class="left"></div>
     <div class="right">
         <div class="login">
-            <h1><a href="/">Login</a>/<a href="register">Register</a></h1>
+            <h1><a href="/">登录</a>/<a href="register">注册</a></h1>
             <form>
                 <input id="name" name="name" type="text" class="line" placeholder="用户名">
                 <input id="userName" name="userName" type="text" class="line" placeholder="账号">
