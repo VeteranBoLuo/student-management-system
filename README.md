@@ -8,7 +8,7 @@ demo版 一直在更新
 
 #### 技术说明
 - 开发工具 ：IDEA2021.1.3
-- 技术框架：Spring+Springboot+freemarker(和html区别不大)
+- 技术框架：Spring+Springboot+freemarker
 - 数据库：MySQL 5.6
 - 项目管理工具：Maven
 
