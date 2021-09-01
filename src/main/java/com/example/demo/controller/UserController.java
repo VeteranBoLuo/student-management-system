@@ -24,6 +24,11 @@ public class UserController {
     @Autowired
     IUserService userService;
 
+    /**
+     * 管理员注册
+     * @param user
+     * @return
+     */
     @ApiOperation(value = "注册")
     @PostMapping("save")
     public User save(@RequestBody User user){

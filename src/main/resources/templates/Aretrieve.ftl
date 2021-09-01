@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>查询学生信息展示</title>
 </head>
 <body>
 <#include 'top.ftl'>

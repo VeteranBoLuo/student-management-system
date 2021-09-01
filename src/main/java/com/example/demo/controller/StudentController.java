@@ -15,13 +15,20 @@ public class StudentController {
     @Autowired
     StudentDao studentDao;
 
-    //跳转至学生注册页面
+    /**
+     * 跳转至学生注册页面
+     * @return
+     */
     @RequestMapping("/sregister")
     public String register(){
         return "sregister";
     }
 
-    //实现学生注册
+    /**
+     * 实现学生注册
+     * @param student
+     * @return
+     */
     @ResponseBody
     @PostMapping("/Sregister")
     public Student Register(@RequestBody Student student){
@@ -32,12 +39,20 @@ public class StudentController {
       return null;
     }
 
-
+    /**
+     * 跳转至修改学生信息页面
+     * @return
+     */
     @RequestMapping("/update")
     public String update(){
         return "update";
     }
 
+    /**
+     * 修改学生信息
+     * @param student
+     * @return
+     */
     @ResponseBody
     @PostMapping("/Supdate")
     public Student Update(@RequestBody Student student){
@@ -52,23 +67,39 @@ public class StudentController {
         return null;
     }
 
-
+    /**
+     * 跳转至删除学生页面
+     * @return
+     */
     @RequestMapping("/delete")
     public String delete(){
         return "delete";
     }
 
+    /**
+     * 删除学生
+     * @param card
+     */
     @Transactional
     @PostMapping("/Delete")
     public void Delete(String card){
         studentDao.deleteByCard(card);
     }
 
+    /**
+     * 跳转至搜索学生页面
+     * @return
+     */
     @RequestMapping("/retrieve")
     public String retrieve(){
         return "retrieve";
     }
 
+    /**
+     * 搜索学生信息
+     * @param card
+     * @return
+     */
     @PostMapping("/Retrieve")
     public ModelAndView Retrieve(String card){
         Student student = studentDao.getByCard(card);

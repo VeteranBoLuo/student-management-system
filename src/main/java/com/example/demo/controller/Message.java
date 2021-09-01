@@ -15,6 +15,10 @@ public class Message {
     @Autowired
     StudentDao studentDao;
 
+    /**
+     * 查看全部学生信息
+     * @return
+     */
     @RequestMapping("/message")
     public ModelAndView message(){
     ModelAndView mav =new ModelAndView();
@@ -22,5 +26,14 @@ public class Message {
     mav.addObject("students",students);
     mav.setViewName("message");
     return mav;
+    }
+
+    /**
+     * 公告
+     * @return
+     */
+    @RequestMapping("notifications")
+    public String notifications(){
+        return "notifications";
     }
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>查询</title>
+    <title>学生查询</title>
 
 </head>
 
