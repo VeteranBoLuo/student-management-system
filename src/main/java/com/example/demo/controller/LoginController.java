@@ -3,18 +3,19 @@ package com.example.demo.controller;
 import com.example.demo.dao.UserDao;
 import com.example.demo.entity.User;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
 /**
  * 登录界面
  */
 @Controller
-@Api(tags = "登录")
+@Api(tags = "登录界面")
 public class LoginController {
 
     @Autowired
@@ -24,7 +25,7 @@ public class LoginController {
      * 跳转至系统主界面
      * @return
      */
-    @RequestMapping("/")
+    @GetMapping("/")
     public String Login(){
         return "login";
     }
@@ -37,6 +38,7 @@ public class LoginController {
      * @param model
      * @return
      */
+    @ApiOperation(value = "登录")
     @PostMapping("doLogin")
     public String doLogin(String userName , String password, HttpSession httpSession, Model model){
            User u = userDao.getByUserName(userName);
@@ -55,7 +57,8 @@ public class LoginController {
      * 管理员注册
      * @return
      */
-    @RequestMapping("register")
+    @ApiOperation(value = "注册")
+    @GetMapping("register")
     public String register(){
         return "register";
     }

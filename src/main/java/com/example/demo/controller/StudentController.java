@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.dao.StudentDao;
 import com.example.demo.entity.Student;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +20,7 @@ public class StudentController {
      * 跳转至学生注册页面
      * @return
      */
-    @RequestMapping("/sregister")
+    @GetMapping("/sregister")
     public String register(){
         return "sregister";
     }
@@ -29,6 +30,7 @@ public class StudentController {
      * @param student
      * @return
      */
+    @ApiOperation(value = "注册")
     @ResponseBody
     @PostMapping("/Sregister")
     public Student Register(@RequestBody Student student){
@@ -43,7 +45,7 @@ public class StudentController {
      * 跳转至修改学生信息页面
      * @return
      */
-    @RequestMapping("/update")
+    @GetMapping("/update")
     public String update(){
         return "update";
     }
@@ -53,6 +55,7 @@ public class StudentController {
      * @param student
      * @return
      */
+    @ApiOperation(value = "修改")
     @ResponseBody
     @PostMapping("/Supdate")
     public Student Update(@RequestBody Student student){
@@ -71,7 +74,7 @@ public class StudentController {
      * 跳转至删除学生页面
      * @return
      */
-    @RequestMapping("/delete")
+    @GetMapping("/delete")
     public String delete(){
         return "delete";
     }
@@ -80,6 +83,7 @@ public class StudentController {
      * 删除学生
      * @param card
      */
+    @ApiOperation(value = "删除")
     @Transactional
     @PostMapping("/Delete")
     public void Delete(String card){
@@ -90,7 +94,7 @@ public class StudentController {
      * 跳转至搜索学生页面
      * @return
      */
-    @RequestMapping("/retrieve")
+    @GetMapping("/retrieve")
     public String retrieve(){
         return "retrieve";
     }
@@ -100,6 +104,7 @@ public class StudentController {
      * @param card
      * @return
      */
+    @ApiOperation(value = "搜索")
     @PostMapping("/Retrieve")
     public ModelAndView Retrieve(String card){
         Student student = studentDao.getByCard(card);
