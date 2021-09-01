@@ -1,10 +1,11 @@
 package com.example.demo.entity;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import lombok.*;
 
 import javax.persistence.*;
-
+/**
+ * 学生
+ */
 @Entity
 @Data
 @AllArgsConstructor

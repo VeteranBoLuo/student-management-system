@@ -21,13 +21,15 @@
                     "phone": phone
                 }),
                 success: function (result) {
-                    if(null!=result){
+                    if(result){
                     alert("注册成功");
                     window.location.href="sregister";
-                    }else {
-                        alert("请填写完整！")
                     }
-                }
+                },
+                    error: function () {
+                        alert("学号重复");
+                    }
+
             });
 
         }

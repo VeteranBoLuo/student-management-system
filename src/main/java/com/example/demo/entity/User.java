@@ -6,6 +6,10 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
+
+/**
+ * 管理员
+ */
 @Entity
 @Getter
 @Setter

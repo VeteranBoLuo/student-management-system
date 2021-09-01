@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.dao.StudentDao;
 import com.example.demo.entity.Student;
 import io.swagger.annotations.Api;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,15 +15,17 @@ public class StudentController {
     @Autowired
     StudentDao studentDao;
 
+    //跳转至学生注册页面
     @RequestMapping("/sregister")
     public String register(){
         return "sregister";
     }
 
+    //实现学生注册
     @ResponseBody
     @PostMapping("/Sregister")
     public Student Register(@RequestBody Student student){
-        if(studentDao.getByCard(student.getCard())==null) {
+        if(studentDao.getByCard(student.getCard())==null&&student.getCard()!="") {
             studentDao.save(student);
             return student;
         }
@@ -30,16 +33,24 @@ public class StudentController {
     }
 
 
-//    @RequestMapping("/update")
-//    public String update(){
-//        return "update";
-//    }
-//
-//    @Transactional
-//    @PostMapping("/Update")
-//    public void Update(String card){
-//
-//    }
+    @RequestMapping("/update")
+    public String update(){
+        return "update";
+    }
+
+    @ResponseBody
+    @PostMapping("/Supdate")
+    public Student Update(@RequestBody Student student){
+       Student newStudent =studentDao.getByCard(student.getCard());
+       if(newStudent!=null){
+           newStudent.setName(student.getName());
+           newStudent.setSex(student.getSex());
+           newStudent.setPhone(student.getPhone());
+           studentDao.save(newStudent);
+            return newStudent;
+        }
+        return null;
+    }
 
 
     @RequestMapping("/delete")

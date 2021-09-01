@@ -23,11 +23,14 @@
                     if ("" !=result.name&&"" != result.userName&&"" != result.password) {
                         alert("注册成功");
                         window.location.href="/";
-                    }else {
-                        alert("请填写完整！")
                     }
-                }
-            });
+                },
+                    error: function () {
+                        alert("请输入正确的学号");
+
+                    }
+
+        });
 
         }
     </script>

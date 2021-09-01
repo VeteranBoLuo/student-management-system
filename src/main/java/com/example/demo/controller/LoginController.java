@@ -4,16 +4,16 @@ import com.example.demo.dao.UserDao;
 import com.example.demo.entity.User;
 import com.example.demo.service.ILoginService;
 import io.swagger.annotations.Api;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
-
+/**
+ * 登录界面
+ */
 @Controller
 @Api(tags = "登录")
 public class LoginController {
