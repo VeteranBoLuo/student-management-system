@@ -30,7 +30,7 @@
         .left{
             width: 800px;
             height: 550px;
-            background-image: url("picture/201515-158211451517f1.jpg");
+            background-image: url("picture/login.jpg");
             /* 让图片适应大小 */
             background-size: cover;
         }
