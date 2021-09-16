@@ -17,7 +17,7 @@
     <#include 'left.ftl'>
 
     <div style="width: 500px;margin: 0 auto;float: left">
-        <table class="table">
+        <table class="table table-striped table-sm">
             <caption>学生信息</caption>
             <thead>
             <tr>
@@ -25,21 +25,24 @@
                 <th>姓名</th>
                 <th>性别</th>
                 <th>联系电话</th>
-
+                <th>操作</th>
             </tr>
             </thead>
-
+        <tbody>
             <#if students??>
                 <#list students as m >
                     <tr>
-                        <td>${m.card}</td>
-                        <td>${m.name}</td>
-                        <td>${m.sex}</td>
-                        <td>${m.phone}</td>
+                        <td>${m.getCard()}</td>
+                        <td>${m.getName()}</td>
+                        <td>${m.getSex()}</td>
+                        <td>${m.getPhone()}</td>
+                        <td>
+                            <a class="btn btn-sm btn-danger" href="/Delete/${m.getCard()}">删除</a>
+                        </td>
                     </tr>
                 </#list>
             </#if>
-
+        </tbody>
         </table>
 
     </div>

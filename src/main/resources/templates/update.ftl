@@ -27,7 +27,7 @@
                     }
                 },
                     error: function () {
-                        alert("请输入正确的学号");
+                        alert("请填写完整！");
                     }
 
             });

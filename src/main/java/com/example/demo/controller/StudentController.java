@@ -38,7 +38,7 @@ public class StudentController {
             studentDao.save(student);
             return student;
         }
-      return null;
+        return null;
     }
 
     /**
@@ -59,12 +59,12 @@ public class StudentController {
     @ResponseBody
     @PostMapping("/Supdate")
     public Student Update(@RequestBody Student student){
-       Student newStudent =studentDao.getByCard(student.getCard());
-       if(newStudent!=null){
-           newStudent.setName(student.getName());
-           newStudent.setSex(student.getSex());
-           newStudent.setPhone(student.getPhone());
-           studentDao.save(newStudent);
+        Student newStudent =studentDao.getByCard(student.getCard());
+        if(newStudent!=null){
+            newStudent.setName(student.getName());
+            newStudent.setSex(student.getSex());
+            newStudent.setPhone(student.getPhone());
+            studentDao.save(newStudent);
             return newStudent;
         }
         return null;
@@ -88,6 +88,21 @@ public class StudentController {
     @PostMapping("/Delete")
     public void Delete(String card){
         studentDao.deleteByCard(card);
+    }
+
+
+
+    /**
+     * 快捷删除学生
+     * @param card
+     * @return
+     */
+    @ApiOperation(value = "删除")
+    @Transactional
+    @GetMapping("/Delete/{card}")
+    public String delete(@PathVariable("card") String card){
+        studentDao.deleteByCard(card);
+        return "redirect:/message";
     }
 
     /**

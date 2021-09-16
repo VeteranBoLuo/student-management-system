@@ -27,7 +27,7 @@
                     }
                 },
                     error: function () {
-                        alert("学号重复");
+                        alert("学号填写错误！");
                     }
 
             });
