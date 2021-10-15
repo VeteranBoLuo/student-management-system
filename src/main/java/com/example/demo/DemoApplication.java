@@ -9,7 +9,7 @@ public class DemoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
-        log.info("学生管理系统启动成功");
+        log.info("学生管理系统启动成功！");
     }
 
 }
