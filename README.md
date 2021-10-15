@@ -8,7 +8,7 @@
 
 #### 技术说明
 - 开发工具 ：IDEA2021.1.3
-- 技术框架：Spring+Springboot+freemarker
+- 技术框架：基于Springboot构建
 - 数据库：MySQL 5.6
 - 项目管理工具：Maven
 
