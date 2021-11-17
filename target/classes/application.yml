@@ -3,7 +3,7 @@ spring:
     name: test
     url: jdbc:mysql://localhost:3306/first_demo
     username: root
-    password: 123456789
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
 
   resources:
