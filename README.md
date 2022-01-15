@@ -16,7 +16,8 @@
 
 1.  将项目下载下来，数据库里运行sql文件即可生成数据库
 2.  将application.yml文件中的数据库账号和密码修改自己数据库的账号密码
-3.  运行DemoApplication，浏览器输入http://localhost:8080/即可访问
+3.  为了可以不用写实体类的getter，setter方法，使用了lombok插件，需要安装一下，百度一下就行安装非常简单
+4.  运行DemoApplication，浏览器输入http://localhost:8080/即可访问
 
 #### 使用说明
 
