@@ -10,7 +10,7 @@
     <b>个人中心</b>&nbsp;&nbsp;&nbsp;
 
     <ul >
-        <li ><a href="notifications">最新通知</a></li>
+        <li ><a href="notifications" >首页</a></li>
         <li ><a href="message">学生信息</a></li>
     </ul>
 

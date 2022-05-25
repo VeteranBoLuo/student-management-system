@@ -42,12 +42,12 @@
 
     <form >
         <fieldset>
-            <legend>信息修改</legend>
+            <legend>根据学号修改</legend>
             <table class="formtable" style="width:50%">
                 <tr>
                     <td>学号：</td>
                     <td>
-                        <input name="card" type="text"  id="card" maxlength="20" />
+                        <input placeholder="请输入学号" name="card" type="text"  id="card" maxlength="20" />
                     </td>
                 </tr>
                 <tr>
